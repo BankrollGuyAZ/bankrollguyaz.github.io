@@ -11,11 +11,11 @@
 <meta property="og:title" content="@BankrollGuyAZ — Betting Communities">
 <meta property="og:description" content="The +EV betting communities @BankrollGuyAZ is actually in.">
 <meta property="og:url" content="https://bankrollguyaz.github.io/">
-<meta property="og:image" content="https://bankrollguyaz.github.io/img/avatar.png">
+<meta property="og:image" content="https://bankrollguyaz.github.io/img/avatar.jpg">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@BankrollGuyAZ">
 
-<link rel="icon" href="img/avatar.png">
+<link rel="icon" href="img/avatar.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -53,22 +53,8 @@
     margin-bottom: 34px;
   }
 
-  .masthead-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    padding: 11px 16px;
-    background: var(--ink);
-    color: var(--paper);
-    font-size: 10px;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-  }
-  .masthead-bar b { color: #f0c9c6; font-weight: 700; }
-
   .masthead-body {
-    padding: 24px 18px 20px;
+    padding: 26px 18px 20px;
     display: flex;
     align-items: center;
     gap: 16px;
@@ -101,13 +87,8 @@
     letter-spacing: -0.015em;
     white-space: nowrap;
   }
-  .ident h1 .az {
-    font-family: 'Space Mono', monospace;
-    font-size: 0.46em;
-    color: var(--red);
-    vertical-align: super;
-    letter-spacing: 0.04em;
-  }
+  /* "AZ" stays red for the accent but matches the rest of the name in size */
+  .ident h1 .az { color: var(--red); }
   .ident .bio {
     margin-top: 7px;
     font-size: 11.5px;
@@ -301,14 +282,9 @@
 <div class="wrap">
 
   <header class="masthead">
-    <div class="masthead-bar">
-      <span>Bet <b>Slip</b></span>
-      <span>Est. 2026</span>
-    </div>
-
     <div class="masthead-body">
       <div class="avatar">
-        <img src="img/avatar.png" alt="BankrollGuyAZ" onerror="this.remove()">
+        <img src="img/avatar.jpg" alt="BankrollGuyAZ" onerror="this.remove()">
       </div>
       <div class="ident">
         <h1>BankrollGuy<span class="az">AZ</span></h1>
