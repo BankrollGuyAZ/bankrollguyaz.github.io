@@ -61,6 +61,7 @@
   }
 
   .avatar {
+    position: relative;
     width: 76px;
     height: 76px;
     flex: 0 0 76px;
@@ -76,7 +77,14 @@
     align-items: center;
     justify-content: center;
   }
-  .avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .avatar img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
 
   .ident { min-width: 0; }
   .ident h1 {
@@ -283,8 +291,10 @@
 
   <header class="masthead">
     <div class="masthead-body">
-      <div class="avatar">
-        <img src="img/avatar.jpg" alt="BankrollGuyAZ" onerror="this.remove()">
+      <!-- ?v=2 busts any cached copy of the previous avatar file.
+           "BG" shows through only if the image genuinely fails to load,
+           so a broken avatar can never render as an empty red circle. -->
+      <div class="avatar">BG<img src="img/avatar.jpg?v=2" alt="BankrollGuyAZ" onerror="this.remove()">
       </div>
       <div class="ident">
         <h1>BankrollGuy<span class="az">AZ</span></h1>
